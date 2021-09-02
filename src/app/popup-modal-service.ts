@@ -7,8 +7,11 @@ export class popUpModalService {
   constructor(private modalService: NgbModal) {}
 
   openModal(inputModalComponent: any, inputModal: any) {
-    debugger;
     const modalRef = this.modalService.open(inputModalComponent);
     modalRef.componentInstance.inputModal = inputModal;
+  }
+
+  openModalWithComponent(inputModalComponent: any) {
+    this.modalService.open(inputModalComponent);
   }
 }

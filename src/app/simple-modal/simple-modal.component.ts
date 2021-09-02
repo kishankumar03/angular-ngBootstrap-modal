@@ -20,7 +20,6 @@ export class SimpleModalComponent implements OnInit {
   constructor(public activeModal: NgbActiveModal) {}
 
   ngOnInit() {
-    debugger;
     console.log(this.inputModal);
   }
 }
