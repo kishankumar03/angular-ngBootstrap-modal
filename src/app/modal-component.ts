@@ -17,7 +17,15 @@ export class NgbdModalComponent implements OnInit {
   open() {
     this.headerText = 'Select hotel?';
     this.bodyText =
-      'Please confirm that you would like to override the customer(s) ability to self-select their preferred hotel. This is not recommended unless requesterd by customer(s)';
+      'Please confirm that you would like to override the customer(s) ability to self-select their preferred hotel. This is not recommended unless requesterd by customer(s).';
+    const model = { header: this.headerText, body: this.bodyText };
+    this.popupModalService.openModal(SimpleModalComponent, model);
+  }
+
+  openFollowUp() {
+    this.headerText = 'Request follow-up?';
+    this.bodyText =
+      'Please confirm that customer(s) would like a customer care agent to follow-up with them after their trip.';
     const model = { header: this.headerText, body: this.bodyText };
     this.popupModalService.openModal(SimpleModalComponent, model);
   }
