@@ -12,7 +12,7 @@ import { SimpleModalComponent } from './simple-modal/simple-modal.component';
   declarations: [NgbdModalComponent, SimpleModalComponent],
   exports: [NgbdModalComponent],
   bootstrap: [NgbdModalComponent],
-  entryComponents: [SimpleModalComponent], // this line would be needed in Angular 8 or older
+  //entryComponents: [SimpleModalComponent], // this line would be needed in Angular 8 or older
   providers: [popUpModalService]
 })
 export class NgbdModalComponentModule {}

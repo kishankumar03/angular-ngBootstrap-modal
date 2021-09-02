@@ -14,7 +14,7 @@ import { Plain } from '../model/plain.model';
   templateUrl: './simple-modal.component.html'
 })
 export class SimpleModalComponent implements OnInit {
-  @Input() public inputModal: Plain;
+  @Input() public inputModal: any;
   //@ContentChild(TemplateRef, { static: false }) childModal: TemplateRef<any>;
 
   constructor(public activeModal: NgbActiveModal) {}

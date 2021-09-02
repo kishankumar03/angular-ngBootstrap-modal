@@ -6,7 +6,8 @@ import { Plain } from './model/plain.model';
 export class popUpModalService {
   constructor(private modalService: NgbModal) {}
 
-  openModal(inputModalComponent: any, inputModal: Plain) {
+  openModal(inputModalComponent: any, inputModal: any) {
+    debugger;
     const modalRef = this.modalService.open(inputModalComponent);
     modalRef.componentInstance.inputModal = inputModal;
   }
